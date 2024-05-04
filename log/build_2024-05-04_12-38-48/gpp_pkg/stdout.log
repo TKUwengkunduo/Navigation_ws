@@ -1,0 +1,49 @@
+running egg_info
+creating ../../build/gpp_pkg/gpp_pkg.egg-info
+writing ../../build/gpp_pkg/gpp_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/gpp_pkg/gpp_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/gpp_pkg/gpp_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/gpp_pkg/gpp_pkg.egg-info/requires.txt
+writing top-level names to ../../build/gpp_pkg/gpp_pkg.egg-info/top_level.txt
+writing manifest file '../../build/gpp_pkg/gpp_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/gpp_pkg/gpp_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/gpp_pkg/gpp_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/weng/work/navigation_ws/build/gpp_pkg/build
+creating /home/weng/work/navigation_ws/build/gpp_pkg/build/lib
+creating /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg
+copying gpp_pkg/main.py -> /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg
+copying gpp_pkg/__init__.py -> /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg
+copying gpp_pkg/GPP_environment.py -> /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg
+copying gpp_pkg/motion_controller_node.py -> /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg
+copying gpp_pkg/Model_architecture.py -> /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg
+running install
+running install_lib
+creating /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg
+copying /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg/main.py -> /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg
+copying /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg/__init__.py -> /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg
+copying /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg/GPP_environment.py -> /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg
+copying /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg/motion_controller_node.py -> /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg
+copying /home/weng/work/navigation_ws/build/gpp_pkg/build/lib/gpp_pkg/Model_architecture.py -> /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg
+byte-compiling /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg/main.py to main.cpython-310.pyc
+byte-compiling /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg/GPP_environment.py to GPP_environment.cpython-310.pyc
+byte-compiling /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg/motion_controller_node.py to motion_controller_node.cpython-310.pyc
+byte-compiling /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg/Model_architecture.py to Model_architecture.cpython-310.pyc
+running install_data
+creating /home/weng/work/navigation_ws/install/gpp_pkg/share/ament_index
+creating /home/weng/work/navigation_ws/install/gpp_pkg/share/ament_index/resource_index
+creating /home/weng/work/navigation_ws/install/gpp_pkg/share/ament_index/resource_index/packages
+copying resource/gpp_pkg -> /home/weng/work/navigation_ws/install/gpp_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/weng/work/navigation_ws/install/gpp_pkg/share/gpp_pkg
+creating /home/weng/work/navigation_ws/install/gpp_pkg/share/gpp_pkg/model
+copying model/policy_net_final.pth -> /home/weng/work/navigation_ws/install/gpp_pkg/share/gpp_pkg/model
+copying model/policy_net_initial.pth -> /home/weng/work/navigation_ws/install/gpp_pkg/share/gpp_pkg/model
+running install_egg_info
+Copying ../../build/gpp_pkg/gpp_pkg.egg-info to /home/weng/work/navigation_ws/install/gpp_pkg/lib/python3.10/site-packages/gpp_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing gpp_client script to /home/weng/work/navigation_ws/install/gpp_pkg/lib/gpp_pkg
+Installing gpp_service script to /home/weng/work/navigation_ws/install/gpp_pkg/lib/gpp_pkg
+writing list of installed files to '/home/weng/work/navigation_ws/build/gpp_pkg/install.log'

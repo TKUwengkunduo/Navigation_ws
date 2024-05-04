@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from navigation_interfaces/srv/PathService.srv
+// generated code does not contain a copyright notice
+
+
+module navigation_interfaces {
+  module srv {
+    struct PathService_Request {
+      string paths;
+    };
+    struct PathService_Response {
+      string confirmation;
+    };
+  };
+};

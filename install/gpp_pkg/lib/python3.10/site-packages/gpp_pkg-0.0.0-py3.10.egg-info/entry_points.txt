@@ -1,0 +1,4 @@
+[console_scripts]
+gpp_client = gpp_pkg.main:main
+gpp_service = gpp_pkg.motion_controller_node:main
+

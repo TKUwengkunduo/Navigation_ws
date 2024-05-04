@@ -1,0 +1,5 @@
+[console_scripts]
+navigation = global_path_test_pkg.navigation:main
+robot_controller = global_path_test_pkg.robot_controller:main
+robot_navigator = global_path_test_pkg.robot_navigator:main
+
