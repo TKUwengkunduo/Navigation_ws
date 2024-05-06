@@ -22,6 +22,17 @@ To install and run the navigation system, follow these steps:
    colcon build
    ```
 
+## Start the Isaac Sim Environment
+1. Copy all USD in the "/navigation_ws/src/Isaac_Sim_warehouse/usd_file" folder to your localhost
+
+2. Start isaac sim
+   ```bash
+   source /opt/ros/humble/setup.bash
+   export FASTRTPS_DEFAULT_PROFILES_FILE=/home/weng/wkd_ws/navigation_ws/src/Isaac_Sim_warehouse/fastdds.xml
+   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/share/ov/pkg/isaac_sim-2023.1.1/exts/omni.isaac.ros2_bridge/humble/lib
+   ./python.sh /home/weng/wkd_ws/navigation_ws/src/Isaac_Sim_warehouse/isaac_transporter_navigation.py
+   ```
+
 ## Running the System
 1. Start the Robot Controllers for Robot 01:
    ```bash
