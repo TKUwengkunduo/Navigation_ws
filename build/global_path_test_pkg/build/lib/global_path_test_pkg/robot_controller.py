@@ -58,7 +58,7 @@ class RobotController(Node):
         target_x, target_y = self.current_target
         dx = target_x - current_x
         dy = target_y - current_y
-        # distance = math.sqrt(dx**2 + dy**2)
+        distance = math.sqrt(dx**2 + dy**2)
 
         # if distance < self.reach_threshold:
         #     self.stop_robot()
