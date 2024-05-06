@@ -9,9 +9,21 @@ import numpy as np
 class RobotController(Node):
     def __init__(self):
         super().__init__('robot_controller')
-        self.subscription_tf = self.create_subscription(TFMessage, '/transporter01/tf', self.tf_callback, 10)
-        self.subscription_target = self.create_subscription(Float64MultiArray, '/target_position', self.target_callback, 10)
-        self.publisher_ = self.create_publisher(Twist, '/transporter01/cmd_vel', 10)
+        
+        # Explicitly handle robot_id as a string parameter
+        self.declare_parameter('robot_id', '01')
+        robot_id = self.get_parameter('robot_id').get_parameter_value().string_value
+
+        # Format topic strings to include the robot ID, ensuring it handles leading zeros
+        tf_topic = f'/transporter{robot_id}/tf'
+        target_topic = f'/transporter{robot_id}/target_position'
+        cmd_vel_topic = f'/transporter{robot_id}/cmd_vel'
+
+        # Subscriptions and publisher using robot-specific topics
+        self.subscription_tf = self.create_subscription(TFMessage, tf_topic, self.tf_callback, 10)
+        self.subscription_target = self.create_subscription(Float64MultiArray, target_topic, self.target_callback, 10)
+        self.publisher_ = self.create_publisher(Twist, cmd_vel_topic, 10)
+
         self.current_target = None
         self.last_position_x = 0.0
         self.last_position_y = 0.0
