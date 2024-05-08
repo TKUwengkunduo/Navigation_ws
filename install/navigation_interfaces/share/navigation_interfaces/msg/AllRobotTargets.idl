@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from navigation_interfaces/msg/AllRobotTargets.msg
+// generated code does not contain a copyright notice
+
+#include "navigation_interfaces/msg/RobotTargets.idl"
+
+module navigation_interfaces {
+  module msg {
+    struct AllRobotTargets {
+      sequence<navigation_interfaces::msg::RobotTargets> targets;
+    };
+  };
+};

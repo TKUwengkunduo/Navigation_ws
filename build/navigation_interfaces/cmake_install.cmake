@@ -372,6 +372,18 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/srv" TYPE FILE FILES "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/srv/Path.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/msg" TYPE FILE FILES "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/msg/AllRobotTargets.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/msg" TYPE FILE FILES "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/msg/RobotTargets.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/srv" TYPE FILE FILES "/home/weng/work/navigation_ws/src/navigation_interfaces/srv/PathService.srv")
 endif()
 
@@ -381,6 +393,26 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/srv" TYPE FILE FILES "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_cmake/srv/PathService_Response.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/srv" TYPE FILE FILES "/home/weng/work/navigation_ws/src/navigation_interfaces/srv/Path.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/srv" TYPE FILE FILES "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_cmake/srv/Path_Request.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/srv" TYPE FILE FILES "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_cmake/srv/Path_Response.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/msg" TYPE FILE FILES "/home/weng/work/navigation_ws/src/navigation_interfaces/msg/AllRobotTargets.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navigation_interfaces/msg" TYPE FILE FILES "/home/weng/work/navigation_ws/src/navigation_interfaces/msg/RobotTargets.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

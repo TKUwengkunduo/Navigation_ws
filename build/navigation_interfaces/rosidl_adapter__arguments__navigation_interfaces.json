@@ -1,6 +1,9 @@
 {
   "package_name": "navigation_interfaces",
   "non_idl_tuples": [
-    "/home/weng/work/navigation_ws/src/navigation_interfaces:srv/PathService.srv"
+    "/home/weng/work/navigation_ws/src/navigation_interfaces:srv/PathService.srv",
+    "/home/weng/work/navigation_ws/src/navigation_interfaces:srv/Path.srv",
+    "/home/weng/work/navigation_ws/src/navigation_interfaces:msg/AllRobotTargets.msg",
+    "/home/weng/work/navigation_ws/src/navigation_interfaces:msg/RobotTargets.msg"
   ]
 }

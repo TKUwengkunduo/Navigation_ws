@@ -1,1 +1,4 @@
 /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/PathService.idl
+/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/Path.idl
+/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:msg/AllRobotTargets.idl
+/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:msg/RobotTargets.idl

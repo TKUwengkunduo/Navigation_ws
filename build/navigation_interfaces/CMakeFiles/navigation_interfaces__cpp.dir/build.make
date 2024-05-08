@@ -70,6 +70,18 @@ CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interface
 CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__builder.hpp
 CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__struct.hpp
 CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__traits.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/path.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path__builder.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path__struct.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path__traits.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/all_robot_targets.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__builder.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__struct.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__traits.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/robot_targets.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__builder.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__struct.hpp
+CMakeFiles/navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__traits.hpp
 
 rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +99,9 @@ rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: /opt/ros/humble
 rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: rosidl_adapter/navigation_interfaces/srv/PathService.idl
+rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: rosidl_adapter/navigation_interfaces/srv/Path.idl
+rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: rosidl_adapter/navigation_interfaces/msg/AllRobotTargets.idl
+rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp: rosidl_adapter/navigation_interfaces/msg/RobotTargets.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -99,10 +114,58 @@ rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__struct.hpp: 
 rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__traits.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__traits.hpp
 
+rosidl_generator_cpp/navigation_interfaces/srv/path.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/srv/path.hpp
+
+rosidl_generator_cpp/navigation_interfaces/srv/detail/path__builder.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/srv/detail/path__builder.hpp
+
+rosidl_generator_cpp/navigation_interfaces/srv/detail/path__struct.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/srv/detail/path__struct.hpp
+
+rosidl_generator_cpp/navigation_interfaces/srv/detail/path__traits.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/srv/detail/path__traits.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/all_robot_targets.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/all_robot_targets.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__builder.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__builder.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__struct.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__struct.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__traits.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__traits.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/robot_targets.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/robot_targets.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__builder.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__builder.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__struct.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__struct.hpp
+
+rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__traits.hpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__traits.hpp
+
 navigation_interfaces__cpp: CMakeFiles/navigation_interfaces__cpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/all_robot_targets.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__builder.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__struct.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/all_robot_targets__traits.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__builder.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__struct.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/detail/robot_targets__traits.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/msg/robot_targets.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path__builder.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path__struct.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path__traits.hpp
 navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__builder.hpp
 navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__struct.hpp
 navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/detail/path_service__traits.hpp
+navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/path.hpp
 navigation_interfaces__cpp: rosidl_generator_cpp/navigation_interfaces/srv/path_service.hpp
 navigation_interfaces__cpp: CMakeFiles/navigation_interfaces__cpp.dir/build.make
 .PHONY : navigation_interfaces__cpp

@@ -1,0 +1,365 @@
+[0.225s] Invoking command in '/home/weng/work/navigation_ws/build/navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/weng/work/navigation_ws/install/gpp_pkg:/home/weng/work/navigation_ws/install/global_path_test_pkg:/opt/ros/humble /usr/local/bin/cmake /home/weng/work/navigation_ws/src/navigation_interfaces -DCMAKE_INSTALL_PREFIX=/home/weng/work/navigation_ws/install/navigation_interfaces
+[0.283s] -- The C compiler identification is GNU 11.4.0
+[0.313s] -- The CXX compiler identification is GNU 11.4.0
+[0.318s] -- Detecting C compiler ABI info
+[0.346s] -- Detecting C compiler ABI info - done
+[0.354s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.354s] -- Detecting C compile features
+[0.354s] -- Detecting C compile features - done
+[0.357s] -- Detecting CXX compiler ABI info
+[0.392s] -- Detecting CXX compiler ABI info - done
+[0.400s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.400s] -- Detecting CXX compile features
+[0.401s] -- Detecting CXX compile features - done
+[0.402s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.471s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.520s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.522s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.527s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.553s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.779s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.985s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.256s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.257s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[1.257s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.257s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.257s]   the cmake_policy command to set the policy and suppress this warning.
+[1.257s] 
+[1.257s] Call Stack (most recent call first):
+[1.257s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.257s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.257s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[1.257s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.257s] [0m
+[1.267s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[1.269s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.269s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[1.269s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.269s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.269s]   the cmake_policy command to set the policy and suppress this warning.
+[1.269s] 
+[1.269s] Call Stack (most recent call first):
+[1.269s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.269s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.269s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.269s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[1.269s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.269s] [0m
+[1.279s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[1.279s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.279s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.279s]   the cmake_policy command to set the policy and suppress this warning.
+[1.279s] 
+[1.279s] Call Stack (most recent call first):
+[1.279s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.279s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.279s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.279s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[1.279s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.280s] [0m
+[1.282s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[1.282s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.282s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.282s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.293s] -- Found PythonExtra: .so
+[1.310s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.322s] -- Added test 'lint_cmake' to check CMake code style
+[1.322s] -- Added test 'xmllint' to check XML markup files
+[1.323s] -- Configuring done (1.1s)
+[1.340s] -- Generating done (0.0s)
+[1.341s] -- Build files have been written to: /home/weng/work/navigation_ws/build/navigation_interfaces
+[1.350s] Invoked command in '/home/weng/work/navigation_ws/build/navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/weng/work/navigation_ws/install/gpp_pkg:/home/weng/work/navigation_ws/install/global_path_test_pkg:/opt/ros/humble /usr/local/bin/cmake /home/weng/work/navigation_ws/src/navigation_interfaces -DCMAKE_INSTALL_PREFIX=/home/weng/work/navigation_ws/install/navigation_interfaces
+[1.351s] Invoking command in '/home/weng/work/navigation_ws/build/navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/weng/work/navigation_ws/install/gpp_pkg:/home/weng/work/navigation_ws/install/global_path_test_pkg:/opt/ros/humble /usr/local/bin/cmake --build /home/weng/work/navigation_ws/build/navigation_interfaces -- -j24 -l24
+[1.394s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.396s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.397s] [  3%] Built target ament_cmake_python_copy_navigation_interfaces
+[1.501s] running egg_info
+[1.501s] creating navigation_interfaces.egg-info
+[1.501s] writing navigation_interfaces.egg-info/PKG-INFO
+[1.501s] writing dependency_links to navigation_interfaces.egg-info/dependency_links.txt
+[1.502s] writing top-level names to navigation_interfaces.egg-info/top_level.txt
+[1.502s] writing manifest file 'navigation_interfaces.egg-info/SOURCES.txt'
+[1.502s] reading manifest file 'navigation_interfaces.egg-info/SOURCES.txt'
+[1.503s] writing manifest file 'navigation_interfaces.egg-info/SOURCES.txt'
+[1.513s] [  3%] Built target ament_cmake_python_build_navigation_interfaces_egg
+[1.581s] [  3%] Built target navigation_interfaces__cpp
+[1.583s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.583s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.583s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.585s] [ 10%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces/srv/detail/path_service__functions.c.o[0m
+[1.585s] [ 12%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces/srv/detail/path__functions.c.o[0m
+[1.585s] [ 14%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces/msg/detail/all_robot_targets__functions.c.o[0m
+[1.586s] [ 16%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_c.dir/rosidl_generator_c/navigation_interfaces/msg/detail/robot_targets__functions.c.o[0m
+[1.610s] [ 18%] [32m[1mLinking C shared library libnavigation_interfaces__rosidl_generator_c.so[0m
+[1.622s] [ 18%] Built target navigation_interfaces__rosidl_generator_c
+[1.624s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.624s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.624s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.721s] [ 25%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/navigation_interfaces/srv/path_service__type_support.cpp.o[0m
+[1.721s] [ 27%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/navigation_interfaces/srv/path__type_support.cpp.o[0m
+[1.722s] [ 29%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/navigation_interfaces/msg/all_robot_targets__type_support.cpp.o[0m
+[1.722s] [ 30%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/navigation_interfaces/msg/robot_targets__type_support.cpp.o[0m
+[1.739s] [ 32%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/navigation_interfaces/srv/detail/path_service__type_support.cpp.o[0m
+[1.740s] [ 36%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/navigation_interfaces/srv/detail/path__type_support.cpp.o[0m
+[1.740s] [ 36%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/navigation_interfaces/msg/detail/all_robot_targets__type_support.cpp.o[0m
+[1.740s] [ 38%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/navigation_interfaces/msg/detail/robot_targets__type_support.cpp.o[0m
+[1.759s] [ 40%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces/srv/detail/dds_fastrtps/path_service__type_support.cpp.o[0m
+[1.760s] [ 41%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces/msg/detail/dds_fastrtps/all_robot_targets__type_support.cpp.o[0m
+[1.760s] [ 43%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces/srv/detail/dds_fastrtps/path__type_support.cpp.o[0m
+[1.760s] [ 45%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/navigation_interfaces/msg/detail/dds_fastrtps/robot_targets__type_support.cpp.o[0m
+[1.761s] [ 47%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/navigation_interfaces/srv/path_service__type_support.cpp.o[0m
+[1.761s] [ 49%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/navigation_interfaces/srv/path__type_support.cpp.o[0m
+[1.762s] [ 50%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/navigation_interfaces/msg/all_robot_targets__type_support.cpp.o[0m
+[1.762s] [ 52%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/navigation_interfaces/msg/robot_targets__type_support.cpp.o[0m
+[1.779s] [ 54%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_c.so[0m
+[1.795s] [ 54%] Built target navigation_interfaces__rosidl_typesupport_c
+[1.807s] [ 56%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.o[0m
+[1.808s] [ 58%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o[0m
+[1.808s] [ 60%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o[0m
+[1.808s] [ 61%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o[0m
+[1.812s] [ 65%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/navigation_interfaces/srv/detail/path__type_support_c.cpp.o[0m
+[1.812s] [ 67%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/navigation_interfaces/msg/detail/all_robot_targets__type_support_c.cpp.o[0m
+[1.812s] [ 69%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/navigation_interfaces/msg/detail/robot_targets__type_support_c.cpp.o[0m
+[1.812s] [ 69%] [32mBuilding CXX object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/navigation_interfaces/srv/detail/path_service__type_support_c.cpp.o[0m
+[1.832s] [ 70%] [32m[1mLinking C shared library libnavigation_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.847s] [ 70%] Built target navigation_interfaces__rosidl_typesupport_introspection_c
+[1.927s] [ 72%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_cpp.so[0m
+[1.942s] [ 72%] Built target navigation_interfaces__rosidl_typesupport_cpp
+[1.997s] [ 74%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.018s] [ 76%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.027s] [ 76%] Built target navigation_interfaces__rosidl_typesupport_fastrtps_c
+[2.027s] [ 78%] [32m[1mLinking CXX shared library libnavigation_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.048s] [ 78%] Built target navigation_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.057s] [ 78%] Built target navigation_interfaces__rosidl_typesupport_introspection_cpp
+[2.061s] [ 78%] Built target navigation_interfaces
+[2.065s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.351s] [ 80%] Built target navigation_interfaces__py
+[2.355s] [ 81%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/navigation_interfaces/srv/_path_service_s.c.o[0m
+[2.355s] [ 85%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/navigation_interfaces/msg/_all_robot_targets_s.c.o[0m
+[2.355s] [ 85%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/navigation_interfaces/srv/_path_s.c.o[0m
+[2.355s] [ 87%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_generator_py.dir/rosidl_generator_py/navigation_interfaces/msg/_robot_targets_s.c.o[0m
+[2.401s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces/libnavigation_interfaces__rosidl_generator_py.so[0m
+[2.416s] [ 89%] Built target navigation_interfaces__rosidl_generator_py
+[2.420s] [ 90%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/navigation_interfaces/_navigation_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.420s] [ 92%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/navigation_interfaces/_navigation_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.420s] [ 94%] [32mBuilding C object CMakeFiles/navigation_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/navigation_interfaces/_navigation_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.466s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.466s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.467s] [100%] [32m[1mLinking C shared library rosidl_generator_py/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.476s] [100%] Built target navigation_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.477s] [100%] Built target navigation_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.477s] [100%] Built target navigation_interfaces__rosidl_typesupport_c__pyext
+[2.485s] Invoked command in '/home/weng/work/navigation_ws/build/navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/weng/work/navigation_ws/install/gpp_pkg:/home/weng/work/navigation_ws/install/global_path_test_pkg:/opt/ros/humble /usr/local/bin/cmake --build /home/weng/work/navigation_ws/build/navigation_interfaces -- -j24 -l24
+[2.613s] Invoking command in '/home/weng/work/navigation_ws/build/navigation_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/weng/work/navigation_ws/install/gpp_pkg:/home/weng/work/navigation_ws/install/global_path_test_pkg:/opt/ros/humble /usr/local/bin/cmake --install /home/weng/work/navigation_ws/build/navigation_interfaces
+[2.648s] -- Install configuration: ""
+[2.648s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/ament_index/resource_index/rosidl_interfaces/navigation_interfaces
+[2.648s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces
+[2.648s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv
+[2.648s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/path.h
+[2.648s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/path_service.h
+[2.648s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail
+[2.648s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__type_support.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__functions.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__type_support.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__struct.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__functions.c
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__functions.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__functions.c
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__struct.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/all_robot_targets.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/robot_targets.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__functions.c
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__functions.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__struct.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__type_support.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__functions.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__struct.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__functions.c
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__type_support.h
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/library_path.sh
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/library_path.dsv
+[2.649s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_generator_c.so
+[2.649s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_generator_c.so" to ""
+[2.649s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces
+[2.649s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv
+[2.649s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__rosidl_typesupport_fastrtps_c.h
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_fastrtps_c.h
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__rosidl_typesupport_fastrtps_c.h
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__rosidl_typesupport_fastrtps_c.h
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.650s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__type_support.c
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__type_support.c
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__rosidl_typesupport_introspection_c.h
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__type_support.c
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__rosidl_typesupport_introspection_c.h
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__rosidl_typesupport_introspection_c.h
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__type_support.c
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_introspection_c.so
+[2.650s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_c.so
+[2.650s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_c.so" to ""
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/path.hpp
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/path_service.hpp
+[2.650s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__builder.hpp
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__traits.hpp
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__traits.hpp
+[2.650s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__struct.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__struct.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__builder.hpp
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/all_robot_targets.hpp
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__traits.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__builder.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__struct.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__struct.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__builder.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__traits.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/robot_targets.hpp
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_fastrtps_cpp.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/dds_fastrtps
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__rosidl_typesupport_fastrtps_cpp.hpp
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/dds_fastrtps
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__rosidl_typesupport_fastrtps_cpp.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__rosidl_typesupport_fastrtps_cpp.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.651s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__type_support.cpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_cpp.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__rosidl_typesupport_introspection_cpp.hpp
+[2.651s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/srv/detail/path__type_support.cpp
+[2.651s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg
+[2.652s] -- Up-to-date: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__rosidl_typesupport_introspection_cpp.hpp
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__rosidl_typesupport_introspection_cpp.hpp
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/all_robot_targets__type_support.cpp
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/include/navigation_interfaces/navigation_interfaces/msg/detail/robot_targets__type_support.cpp
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.652s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_cpp.so
+[2.652s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/pythonpath.sh
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/pythonpath.dsv
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces-0.0.0-py3.10.egg-info
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/libnavigation_interfaces__rosidl_generator_py.so
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/_path_s.c
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/_path_service_s.c
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/__init__.py
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/_path.py
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/_path_service.py
+[2.652s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/__init__.py
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/_all_robot_targets_s.c
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/__init__.py
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/_robot_targets.py
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/_all_robot_targets.py
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/_robot_targets_s.c
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/_navigation_interfaces_s.ep.rosidl_typesupport_c.c
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/_navigation_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.653s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/_navigation_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.671s] Listing '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces'...
+[2.671s] Compiling '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/__init__.py'...
+[2.671s] Listing '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg'...
+[2.671s] Compiling '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/__init__.py'...
+[2.671s] Compiling '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/_all_robot_targets.py'...
+[2.671s] Compiling '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/msg/_robot_targets.py'...
+[2.671s] Listing '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv'...
+[2.671s] Compiling '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/__init__.py'...
+[2.671s] Compiling '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/_path.py'...
+[2.671s] Compiling '/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/srv/_path_service.py'...
+[2.673s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.673s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.673s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.674s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.674s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/local/lib/python3.10/dist-packages/navigation_interfaces/navigation_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_generator_py.so
+[2.674s] -- Set non-toolchain portion of runtime path of "/home/weng/work/navigation_ws/install/navigation_interfaces/lib/libnavigation_interfaces__rosidl_generator_py.so" to ""
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/PathService.idl
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/Path.idl
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/msg/AllRobotTargets.idl
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/msg/RobotTargets.idl
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/PathService.srv
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/PathService_Request.msg
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/PathService_Response.msg
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/Path.srv
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/Path_Request.msg
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/srv/Path_Response.msg
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/msg/AllRobotTargets.msg
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/msg/RobotTargets.msg
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/ament_index/resource_index/package_run_dependencies/navigation_interfaces
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/ament_index/resource_index/parent_prefix_path/navigation_interfaces
+[2.674s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/ament_prefix_path.sh
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/ament_prefix_path.dsv
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/path.sh
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/environment/path.dsv
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/local_setup.bash
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/local_setup.sh
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/local_setup.zsh
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/local_setup.dsv
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/package.dsv
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/ament_index/resource_index/packages/navigation_interfaces
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_generator_cExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_cExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_generator_cppExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_cppExport.cmake
+[2.675s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_generator_pyExport.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/export_navigation_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfacesConfig.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/cmake/navigation_interfacesConfig-version.cmake
+[2.676s] -- Installing: /home/weng/work/navigation_ws/install/navigation_interfaces/share/navigation_interfaces/package.xml
+[2.684s] Invoked command in '/home/weng/work/navigation_ws/build/navigation_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/weng/work/navigation_ws/install/gpp_pkg:/home/weng/work/navigation_ws/install/global_path_test_pkg:/opt/ros/humble /usr/local/bin/cmake --install /home/weng/work/navigation_ws/build/navigation_interfaces

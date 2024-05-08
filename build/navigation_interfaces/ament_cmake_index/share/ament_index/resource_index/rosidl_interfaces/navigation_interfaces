@@ -1,4 +1,12 @@
+msg/AllRobotTargets.idl
+msg/AllRobotTargets.msg
+msg/RobotTargets.idl
+msg/RobotTargets.msg
+srv/Path.idl
+srv/Path.srv
 srv/PathService.idl
 srv/PathService.srv
 srv/PathService_Request.msg
 srv/PathService_Response.msg
+srv/Path_Request.msg
+srv/Path_Response.msg

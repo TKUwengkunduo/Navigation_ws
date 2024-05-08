@@ -4,5 +4,9 @@ navigation_interfaces.egg-info/PKG-INFO
 navigation_interfaces.egg-info/SOURCES.txt
 navigation_interfaces.egg-info/dependency_links.txt
 navigation_interfaces.egg-info/top_level.txt
+navigation_interfaces/msg/__init__.py
+navigation_interfaces/msg/_all_robot_targets.py
+navigation_interfaces/msg/_robot_targets.py
 navigation_interfaces/srv/__init__.py
+navigation_interfaces/srv/_path.py
 navigation_interfaces/srv/_path_service.py

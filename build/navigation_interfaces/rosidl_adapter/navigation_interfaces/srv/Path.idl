@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from navigation_interfaces/srv/Path.srv
+// generated code does not contain a copyright notice
+
+
+module navigation_interfaces {
+  module srv {
+    struct Path_Request {
+      @verbatim (language="comment", text=
+        "List of positions encoded as x1, y1, x2, y2, ...")
+      sequence<double> positions;
+    };
+    struct Path_Response {
+      @verbatim (language="comment", text=
+        "Confirmation of receipt")
+      boolean success;
+    };
+  };
+};

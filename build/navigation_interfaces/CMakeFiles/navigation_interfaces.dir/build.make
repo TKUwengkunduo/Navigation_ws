@@ -69,6 +69,11 @@ include CMakeFiles/navigation_interfaces.dir/progress.make
 CMakeFiles/navigation_interfaces: /home/weng/work/navigation_ws/src/navigation_interfaces/srv/PathService.srv
 CMakeFiles/navigation_interfaces: rosidl_cmake/srv/PathService_Request.msg
 CMakeFiles/navigation_interfaces: rosidl_cmake/srv/PathService_Response.msg
+CMakeFiles/navigation_interfaces: /home/weng/work/navigation_ws/src/navigation_interfaces/srv/Path.srv
+CMakeFiles/navigation_interfaces: rosidl_cmake/srv/Path_Request.msg
+CMakeFiles/navigation_interfaces: rosidl_cmake/srv/Path_Response.msg
+CMakeFiles/navigation_interfaces: /home/weng/work/navigation_ws/src/navigation_interfaces/msg/AllRobotTargets.msg
+CMakeFiles/navigation_interfaces: /home/weng/work/navigation_ws/src/navigation_interfaces/msg/RobotTargets.msg
 
 navigation_interfaces: CMakeFiles/navigation_interfaces
 navigation_interfaces: CMakeFiles/navigation_interfaces.dir/build.make

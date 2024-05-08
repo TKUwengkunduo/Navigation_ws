@@ -1,0 +1,46 @@
+running egg_info
+creating ../../build/global_path_test_pkg/global_path_test_pkg.egg-info
+writing ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/requires.txt
+writing top-level names to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/top_level.txt
+writing manifest file '../../build/global_path_test_pkg/global_path_test_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/global_path_test_pkg/global_path_test_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/global_path_test_pkg/global_path_test_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/weng/work/navigation_ws/build/global_path_test_pkg/build
+creating /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib
+creating /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+copying global_path_test_pkg/navigation.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+copying global_path_test_pkg/__init__.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+copying global_path_test_pkg/robot_navigator.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+copying global_path_test_pkg/robot_controller.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+running install
+running install_lib
+creating /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/navigation.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/__init__.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/robot_navigator.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/robot_controller.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/navigation.py to navigation.cpython-310.pyc
+byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/robot_navigator.py to robot_navigator.cpython-310.pyc
+byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/robot_controller.py to robot_controller.cpython-310.pyc
+running install_data
+creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index
+creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index/resource_index
+creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index/resource_index/packages
+copying resource/global_path_test_pkg -> /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/weng/work/navigation_ws/install/global_path_test_pkg/share/global_path_test_pkg
+creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/global_path_test_pkg/launch
+copying launch/multi_robot_launch.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/share/global_path_test_pkg/launch
+running install_egg_info
+Copying ../../build/global_path_test_pkg/global_path_test_pkg.egg-info to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing navigation script to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/global_path_test_pkg
+Installing robot_controller script to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/global_path_test_pkg
+Installing robot_navigator script to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/global_path_test_pkg
+writing list of installed files to '/home/weng/work/navigation_ws/build/global_path_test_pkg/install.log'

@@ -78,11 +78,32 @@ rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service
 rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h: rosidl_adapter/navigation_interfaces/srv/PathService.idl
+rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h: rosidl_adapter/navigation_interfaces/srv/Path.idl
+rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h: rosidl_adapter/navigation_interfaces/msg/AllRobotTargets.idl
+rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h: rosidl_adapter/navigation_interfaces/msg/RobotTargets.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
+rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c
+
+rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c
+
+rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c
+
+rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c
 
 CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.o: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.o: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c
@@ -98,21 +119,69 @@ CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c -o CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.s
 
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o -MF CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o.d -o CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o -c /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c > CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.i
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c -o CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.s
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o: rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o -MF CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o.d -o CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o -c /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c > CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.i
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c -o CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.s
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o: rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o -MF CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o.d -o CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o -c /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c > CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.i
+
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c -o CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.s
+
 # Object files for target navigation_interfaces__rosidl_typesupport_introspection_c
 navigation_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.o"
+"CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.o" \
+"CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o" \
+"CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o" \
+"CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o"
 
 # External object files for target navigation_interfaces__rosidl_typesupport_introspection_c
 navigation_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libnavigation_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c.o
+libnavigation_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c.o
+libnavigation_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c.o
+libnavigation_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c.o
 libnavigation_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libnavigation_interfaces__rosidl_typesupport_introspection_c.so: libnavigation_interfaces__rosidl_generator_c.so
 libnavigation_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libnavigation_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libnavigation_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libnavigation_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libnavigation_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libnavigation_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +192,12 @@ CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/clean
 
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__rosidl_typesupport_introspection_c.h
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/all_robot_targets__type_support.c
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__rosidl_typesupport_introspection_c.h
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/msg/detail/robot_targets__type_support.c
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__rosidl_typesupport_introspection_c.h
+CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path__type_support.c
 CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__rosidl_typesupport_introspection_c.h
 CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/navigation_interfaces/srv/detail/path_service__type_support.c
 	cd /home/weng/work/navigation_ws/build/navigation_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/weng/work/navigation_ws/src/navigation_interfaces /home/weng/work/navigation_ws/src/navigation_interfaces /home/weng/work/navigation_ws/build/navigation_interfaces /home/weng/work/navigation_ws/build/navigation_interfaces /home/weng/work/navigation_ws/build/navigation_interfaces/CMakeFiles/navigation_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake "--color=$(COLOR)"

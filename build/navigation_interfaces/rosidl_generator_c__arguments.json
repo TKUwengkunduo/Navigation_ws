@@ -3,7 +3,10 @@
   "output_dir": "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_generator_c/navigation_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/PathService.idl"
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/PathService.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/Path.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:msg/AllRobotTargets.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:msg/RobotTargets.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +22,9 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/srv/PathService.idl"
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/srv/PathService.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/srv/Path.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/msg/AllRobotTargets.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/msg/RobotTargets.idl"
   ]
 }

@@ -6,61 +6,90 @@ import math
 
 class RobotNavigator(Node):
     def __init__(self):
-        super().__init__('robot_navigator')
-        # Subscriptions for two robots
-        self.subscription_robot1 = self.create_subscription(TFMessage, '/transporter01/tf', self.tf_callback_robot1, 10)
-        self.subscription_robot2 = self.create_subscription(TFMessage, '/transporter03/tf', self.tf_callback_robot2, 10)
-        
-        # Publishers for two robots
-        self.publisher_robot1 = self.create_publisher(Float64MultiArray, '/transporter01/target_position', 10)
-        self.publisher_robot2 = self.create_publisher(Float64MultiArray, '/transporter03/target_position', 10)
-        
-        # Target positions, assuming both robots have the same sequence
-        self.target_positions = [
-            (-32.0, -44.0), (-32.0, -36.0), (-32.0, -28.0), (-20.0, -28.0),
-            (-8.0, -28.0), (-8.0, -20.0), (-8.0, -12.0), (-8.0, -4.0)
+        super().__init__('robot_navigator')  # Initialize the parent class first
+
+        # Mapping from index to coordinates
+        index_to_coords = {
+            1: (-8, -4), 2: (-20, -4), 3: (-32, -4),
+            4: (-8, -12), 5: (-20, -12), 6: (-32, -12),
+            7: (-8, -20), 8: (-20, -20), 9: (-32, -20),
+            10: (-8, -28), 11: (-20, -28), 12: (-32, -28),
+            13: (-8, -36), 14: (-20, -36), 15: (-32, -36),
+            16: (-8, -44), 17: (-20, -44), 18: (-32, -44),
+            19: (-8, -52), 20: (-20, -52), 21: (-32, -52)
+        }
+
+        # Paths for each robot
+        robot_paths = [
+            [21, 18, 15, 12, 11, 10, 7, 4, 1],
+            [1, 4, 7, 8, 9, 12],
+            [21, 18, 15, 12, 11],
+            [5],
+            [5, 8, 9, 12, 15, 18, 21],
+            [6, 3],
+            [13, 10, 7, 4, 5, 2],
+            [14, 11, 8, 5, 2],
+            [16, 13, 10, 7, 8, 5],
+            [7, 4, 5, 6]
         ]
-        self.current_target_index = [0, 0]  # Separate target indices for each robot
+
+        self.target_positions = [
+            [index_to_coords.get(idx, (0, 0)) for idx in path] for path in robot_paths
+        ]
+
+        self.num_robots = 10
+        self.robot_publishers = []
+        self.robot_subscriptions = []  # Renamed from 'subscriptions' to avoid attribute conflict
+        self.current_target_indices = [0] * self.num_robots
+        self.current_robot_positions = [(0.0, 0.0)] * self.num_robots
         self.reach_threshold = 2.0
-        self.current_robot_position = [(0.0, 0.0), (0.0, 0.0)]  # Separate current positions for each robot
 
-    def tf_callback_robot1(self, msg):
-        self.update_position(0, msg)
+        # Setup publishers and subscriptions for each robot
+        for i in range(self.num_robots):
+            robot_id = f'transporter{i+1}'
+            # Fix potential lambda capture issue by using a separate function or passing the index directly
+            callback = lambda msg, idx=i: self.tf_callback(msg, idx)
+            self.robot_subscriptions.append(
+                self.create_subscription(TFMessage, f'/{robot_id}/tf', callback, 10)
+            )
+            self.robot_publishers.append(
+                self.create_publisher(Float64MultiArray, f'/{robot_id}/target_position', 10)
+            )
 
-    def tf_callback_robot2(self, msg):
-        self.update_position(1, msg)
 
-    def update_position(self, robot_index, msg):
-        current_position = msg.transforms[0].transform.translation
-        self.current_robot_position[robot_index] = (current_position.x, current_position.y)
+        self.timer = self.create_timer(0.005, self.update_navigation)
 
-        if self.current_target_index[robot_index] < len(self.target_positions):
-            target = self.target_positions[self.current_target_index[robot_index]]
-            if self.is_target_reached(self.current_robot_position[robot_index], target):
-                self.get_logger().info(f'Robot {robot_index + 1}: Target {self.current_target_index[robot_index] + 1} reached: {target}. Moving to next target.')
-                self.current_target_index[robot_index] += 1
-                if self.current_target_index[robot_index] < len(self.target_positions):
-                    self.publish_current_target(robot_index)
+    def tf_callback(self, msg, robot_index):
+        position = msg.transforms[0].transform.translation
+        self.current_robot_positions[robot_index] = (position.x, position.y)
+
+    def update_navigation(self):
+        for i in range(self.num_robots):
+            if self.current_target_indices[i] < len(self.target_positions[i]):
+                current_pos = self.current_robot_positions[i]
+                target_pos = self.target_positions[i][self.current_target_indices[i]]
+                if self.is_target_reached(current_pos, target_pos):
+                    self.get_logger().info(f'Robot {i+1}: Target {self.current_target_indices[i]+1} reached: {target_pos}.')
+                    self.current_target_indices[i] += 1
+                    self.publish_current_target(i)
                 else:
-                    self.get_logger().info(f'Robot {robot_index + 1}: All targets have been published. No more targets to process.')
-            else:
-                self.publish_current_target(robot_index)
-        else:
-            self.get_logger().info(f'Robot {robot_index + 1}: No more targets to publish.')
+                    self.publish_current_target(i)
 
     def is_target_reached(self, current_pos, target_pos):
-        distance = math.sqrt((current_pos[0] - target_pos[0]) ** 2 + (current_pos[1] - target_pos[1]) ** 2)
-        return distance <= self.reach_threshold
+        return math.sqrt((current_pos[0] - target_pos[0]) ** 2 + (current_pos[1] - target_pos[1]) ** 2) <= self.reach_threshold
 
     def publish_current_target(self, robot_index):
-        if self.current_target_index[robot_index] < len(self.target_positions):
-            current_target = Float64MultiArray()
-            current_target.data = self.target_positions[self.current_target_index[robot_index]]
-            if robot_index == 0:
-                self.publisher_robot1.publish(current_target)
-            else:
-                self.publisher_robot2.publish(current_target)
-            self.get_logger().info(f'Robot {robot_index + 1}: Continuously publishing current target position {current_target.data} to target_position.')
+        if self.current_target_indices[robot_index] < len(self.target_positions[robot_index]):
+            target = self.target_positions[robot_index][self.current_target_indices[robot_index]]
+            msg = Float64MultiArray()
+            # Ensure the target is a flat list of floats
+            msg.data = [float(coord) for coord in target]
+            self.robot_publishers[robot_index].publish(msg)
+            self.get_logger().info(f'Robot {robot_index + 1}: Publishing target position {target}.')
+        else:
+            # Optionally handle the case where all targets have been published
+            self.get_logger().info(f'Robot {robot_index + 1}: All targets have been reached.')
+
 
 def main(args=None):
     rclpy.init(args=args)

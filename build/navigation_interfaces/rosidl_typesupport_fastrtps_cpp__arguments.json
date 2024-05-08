@@ -3,7 +3,10 @@
   "output_dir": "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_typesupport_fastrtps_cpp/navigation_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
-    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/PathService.idl"
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/PathService.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:srv/Path.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:msg/AllRobotTargets.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces:msg/RobotTargets.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
@@ -14,6 +17,9 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
-    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/srv/PathService.idl"
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/srv/PathService.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/srv/Path.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/msg/AllRobotTargets.idl",
+    "/home/weng/work/navigation_ws/build/navigation_interfaces/rosidl_adapter/navigation_interfaces/msg/RobotTargets.idl"
   ]
 }
