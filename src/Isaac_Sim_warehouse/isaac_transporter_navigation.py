@@ -9,7 +9,7 @@ TRANSPORTER_PATH = "/World/transporter1"
 TRANSPORTER_USD_PATH = "/navigation/transporter.usd"
 BACKGROUND_STAGE_PATH = "/World"
 # BACKGROUND_USD_PATH = "/navigation/World.usd"
-BACKGROUND_USD_PATH = "/navigation/warehouse_6x3.usd"
+BACKGROUND_USD_PATH = "/navigation/warehouse_6x3_v2.usd"
 BACKGROUND_ENV_PATH = "/World/World"
 CONFIG = {"renderer": "RayTracedLighting", "headless": False}
 MALE_USD_PATH = "/navigation/male_adult_construction_05_new.usd"
@@ -114,6 +114,7 @@ def create_transporter(name, position, orientation):
     # stage.add_reference_to_stage(assets_root_path + UWB_ACTIONGRAPH_PATH, transporter_path)
     # stage.add_reference_to_stage(assets_root_path + ROBOT_CAMERA_ACTIONGRAPH_PATH, transporter_path)
     # stage.add_reference_to_stage(assets_root_path + ROBOT_CONTROLLER_ACTIONGRAPH_PATH, transporter_path)
+    stage.add_reference_to_stage(assets_root_path + ROBOT_CAMERA_ACTIONGRAPH_PATH, "/World")
 
     
 
@@ -124,7 +125,8 @@ def setting_transporter_graph(name):
     # set_target_prims(primPath="/World/" + name + "/UWB/ros2_publish_transform_tree", targetPrimPaths=[transporter_path + "/lift"], inputName="inputs:targetPrims")
     # set_target_prims(primPath="/World/" + name + "/Robot_Camera/isaac_create_render_product", targetPrimPaths=[transporter_path + "/lift/Camera"], inputName="inputs:cameraPrim")
     # set_target_prims(primPath="/World/" + name + "/Robot_Camera/ros2_camera_helper", targetPrimPaths=name+"_rgb", inputName="inputs:topicName")
-
+    set_target_prims(primPath="/World/Robot_Camera/isaac_create_render_product", targetPrimPaths=["/World/World/Camera"], inputName="inputs:cameraPrim")
+    set_target_prims(primPath="/World/Robot_Camera/ros2_camera_helper", targetPrimPaths="/world_rgb", inputName="inputs:topicName")
     try:
         """ ========================================= Camera ========================================= """
         # og.Controller.edit(

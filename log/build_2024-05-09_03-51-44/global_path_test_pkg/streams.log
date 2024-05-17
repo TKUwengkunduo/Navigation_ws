@@ -1,0 +1,48 @@
+[0.510s] Invoking command in '/home/weng/work/navigation_ws/src/global_path_test_pkg': PYTHONPATH=/home/weng/work/navigation_ws/build/global_path_test_pkg/prefix_override:/home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/global_path_test_pkg build --build-base /home/weng/work/navigation_ws/build/global_path_test_pkg/build install --record /home/weng/work/navigation_ws/build/global_path_test_pkg/install.log --single-version-externally-managed install_data
+[0.615s] running egg_info
+[0.616s] creating ../../build/global_path_test_pkg/global_path_test_pkg.egg-info
+[0.616s] writing ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/PKG-INFO
+[0.616s] writing dependency_links to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/dependency_links.txt
+[0.616s] writing entry points to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/entry_points.txt
+[0.616s] writing requirements to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/requires.txt
+[0.616s] writing top-level names to ../../build/global_path_test_pkg/global_path_test_pkg.egg-info/top_level.txt
+[0.616s] writing manifest file '../../build/global_path_test_pkg/global_path_test_pkg.egg-info/SOURCES.txt'
+[0.617s] reading manifest file '../../build/global_path_test_pkg/global_path_test_pkg.egg-info/SOURCES.txt'
+[0.617s] adding license file 'LICENSE'
+[0.617s] writing manifest file '../../build/global_path_test_pkg/global_path_test_pkg.egg-info/SOURCES.txt'
+[0.617s] running build
+[0.617s] running build_py
+[0.617s] creating /home/weng/work/navigation_ws/build/global_path_test_pkg/build
+[0.617s] creating /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib
+[0.617s] creating /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+[0.617s] copying global_path_test_pkg/navigation.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+[0.617s] copying global_path_test_pkg/__init__.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+[0.618s] copying global_path_test_pkg/robot_navigator.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+[0.618s] copying global_path_test_pkg/robot_controller.py -> /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg
+[0.618s] running install
+[0.618s] running install_lib
+[0.618s] creating /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+[0.618s] copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/navigation.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+[0.618s] copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/__init__.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+[0.618s] copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/robot_navigator.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+[0.618s] copying /home/weng/work/navigation_ws/build/global_path_test_pkg/build/lib/global_path_test_pkg/robot_controller.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg
+[0.618s] byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/navigation.py to navigation.cpython-310.pyc
+[0.619s] byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/__init__.py to __init__.cpython-310.pyc
+[0.619s] byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/robot_navigator.py to robot_navigator.cpython-310.pyc
+[0.619s] byte-compiling /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg/robot_controller.py to robot_controller.cpython-310.pyc
+[0.620s] running install_data
+[0.620s] creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index
+[0.620s] creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index/resource_index
+[0.620s] creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index/resource_index/packages
+[0.620s] copying resource/global_path_test_pkg -> /home/weng/work/navigation_ws/install/global_path_test_pkg/share/ament_index/resource_index/packages
+[0.620s] copying package.xml -> /home/weng/work/navigation_ws/install/global_path_test_pkg/share/global_path_test_pkg
+[0.620s] creating /home/weng/work/navigation_ws/install/global_path_test_pkg/share/global_path_test_pkg/launch
+[0.620s] copying launch/multi_robot_launch.py -> /home/weng/work/navigation_ws/install/global_path_test_pkg/share/global_path_test_pkg/launch
+[0.620s] running install_egg_info
+[0.621s] Copying ../../build/global_path_test_pkg/global_path_test_pkg.egg-info to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages/global_path_test_pkg-0.0.0-py3.10.egg-info
+[0.621s] running install_scripts
+[0.633s] Installing navigation script to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/global_path_test_pkg
+[0.633s] Installing robot_controller script to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/global_path_test_pkg
+[0.633s] Installing robot_navigator script to /home/weng/work/navigation_ws/install/global_path_test_pkg/lib/global_path_test_pkg
+[0.634s] writing list of installed files to '/home/weng/work/navigation_ws/build/global_path_test_pkg/install.log'
+[0.648s] Invoked command in '/home/weng/work/navigation_ws/src/global_path_test_pkg' returned '0': PYTHONPATH=/home/weng/work/navigation_ws/build/global_path_test_pkg/prefix_override:/home/weng/work/navigation_ws/install/global_path_test_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/global_path_test_pkg build --build-base /home/weng/work/navigation_ws/build/global_path_test_pkg/build install --record /home/weng/work/navigation_ws/build/global_path_test_pkg/install.log --single-version-externally-managed install_data

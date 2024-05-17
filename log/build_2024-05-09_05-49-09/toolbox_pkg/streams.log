@@ -1,0 +1,25 @@
+[0.506s] Invoking command in '/home/weng/work/navigation_ws/src/toolbox_pkg': PYTHONPATH=/home/weng/work/navigation_ws/build/toolbox_pkg/prefix_override:/home/weng/work/navigation_ws/install/toolbox_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/toolbox_pkg build --build-base /home/weng/work/navigation_ws/build/toolbox_pkg/build install --record /home/weng/work/navigation_ws/build/toolbox_pkg/install.log --single-version-externally-managed install_data
+[0.612s] running egg_info
+[0.612s] writing ../../build/toolbox_pkg/toolbox_pkg.egg-info/PKG-INFO
+[0.612s] writing dependency_links to ../../build/toolbox_pkg/toolbox_pkg.egg-info/dependency_links.txt
+[0.612s] writing entry points to ../../build/toolbox_pkg/toolbox_pkg.egg-info/entry_points.txt
+[0.612s] writing requirements to ../../build/toolbox_pkg/toolbox_pkg.egg-info/requires.txt
+[0.613s] writing top-level names to ../../build/toolbox_pkg/toolbox_pkg.egg-info/top_level.txt
+[0.613s] reading manifest file '../../build/toolbox_pkg/toolbox_pkg.egg-info/SOURCES.txt'
+[0.613s] adding license file 'LICENSE'
+[0.613s] writing manifest file '../../build/toolbox_pkg/toolbox_pkg.egg-info/SOURCES.txt'
+[0.613s] running build
+[0.613s] running build_py
+[0.613s] copying toolbox_pkg/record.py -> /home/weng/work/navigation_ws/build/toolbox_pkg/build/lib/toolbox_pkg
+[0.614s] running install
+[0.614s] running install_lib
+[0.614s] copying /home/weng/work/navigation_ws/build/toolbox_pkg/build/lib/toolbox_pkg/record.py -> /home/weng/work/navigation_ws/install/toolbox_pkg/lib/python3.10/site-packages/toolbox_pkg
+[0.614s] byte-compiling /home/weng/work/navigation_ws/install/toolbox_pkg/lib/python3.10/site-packages/toolbox_pkg/record.py to record.cpython-310.pyc
+[0.614s] running install_data
+[0.614s] running install_egg_info
+[0.615s] removing '/home/weng/work/navigation_ws/install/toolbox_pkg/lib/python3.10/site-packages/toolbox_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.615s] Copying ../../build/toolbox_pkg/toolbox_pkg.egg-info to /home/weng/work/navigation_ws/install/toolbox_pkg/lib/python3.10/site-packages/toolbox_pkg-0.0.0-py3.10.egg-info
+[0.616s] running install_scripts
+[0.629s] Installing record script to /home/weng/work/navigation_ws/install/toolbox_pkg/lib/toolbox_pkg
+[0.629s] writing list of installed files to '/home/weng/work/navigation_ws/build/toolbox_pkg/install.log'
+[0.640s] Invoked command in '/home/weng/work/navigation_ws/src/toolbox_pkg' returned '0': PYTHONPATH=/home/weng/work/navigation_ws/build/toolbox_pkg/prefix_override:/home/weng/work/navigation_ws/install/toolbox_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/toolbox_pkg build --build-base /home/weng/work/navigation_ws/build/toolbox_pkg/build install --record /home/weng/work/navigation_ws/build/toolbox_pkg/install.log --single-version-externally-managed install_data

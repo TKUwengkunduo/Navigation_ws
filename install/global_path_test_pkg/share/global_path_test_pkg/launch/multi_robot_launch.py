@@ -25,6 +25,7 @@ def generate_launch_description():
         package='global_path_test_pkg',
         executable='robot_navigator',
         name='robot_navigator',
+        namespace='zenith_system',
         output='screen'
     )
 
