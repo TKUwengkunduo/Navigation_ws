@@ -1,0 +1,10 @@
+n_steps: 20
+learning_rate: 0.000125
+gamma: 0.99
+gae_lambda: 0.95
+ent_coef: 7.5e-08
+vf_coef: 0.95
+max_grad_norm: 0.9
+device: "cuda:0"
+total_timesteps: 1000000
+

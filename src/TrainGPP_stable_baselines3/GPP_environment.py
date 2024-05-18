@@ -23,7 +23,8 @@ class GPPEnv(gym.Env):
         self.robot_paths = {}
         self.chosen_paths = {}
 
-        self.action_space = spaces.MultiDiscrete([self.k_paths] * self.num_robots)
+        # Use Box space to represent actions in the range [0, k_paths - 1]
+        self.action_space = spaces.Box(low=0, high=self.k_paths - 1, shape=(self.num_robots,), dtype=np.float32)
         self.observation_space = spaces.Box(low=0, high=21, shape=(self.num_robots * self.k_paths * self.max_length,), dtype=np.int32)
 
     def reset(self, seed=None, options=None):
@@ -40,6 +41,10 @@ class GPPEnv(gym.Env):
         self.step_count += 1
         done = self.step_count >= self.max_steps
         truncated = False
+
+        # Convert continuous actions to discrete actions
+        action = np.round(action).astype(int)
+        action = np.clip(action, 0, self.k_paths - 1)
 
         standard_action = [0] * len(action)
         self.chosen_path(standard_action)

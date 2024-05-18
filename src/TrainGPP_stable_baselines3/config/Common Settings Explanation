@@ -1,0 +1,12 @@
+Common Settings Explanation
+	buffer_size: 重播緩衝區的大小。
+	learning_starts: 開始學習之前的步數。
+	batch_size: 每次訓練更新的樣本批次大小。
+	gamma: 折扣因子。
+	train_freq: 每次更新模型的頻率。
+	gradient_steps: 每次更新的梯度步數。
+	learning_rate: 學習率。
+	ent_coef: 熵係數（僅適用於有熵懲罰的算法，如PPO和SAC）。
+	tau: 用於軟更新目標網路的係數（僅適用於有目標網路的算法，如TD3和SAC）。
+	device: 設備（例如'cuda:0'）。
+	total_timesteps: 總訓練步數。

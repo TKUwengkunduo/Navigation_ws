@@ -1,0 +1,12 @@
+learning_rate: 0.000125
+buffer_size: 1000000  # 默認值，可以根據需要調整
+learning_starts: 100  # 默認值，可以根據需要調整
+batch_size: 64
+tau: 0.005  # 默認值，可以根據需要調整
+gamma: 0.99
+train_freq: 1  # 默認值，可以根據需要調整
+gradient_steps: 1  # 默認值，可以根據需要調整
+optimize_memory_usage: False  # 默認值，可以根據需要調整
+device: "cuda:0"
+total_timesteps: 1000000
+
