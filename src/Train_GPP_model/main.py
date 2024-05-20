@@ -225,15 +225,11 @@ def test_model():
     num_robots = 10
     k_paths = 3
 
-    before2after_path_lengths = 0
-    before2after_collisions = 0
-    original_collisions = 0
 
-    df_All_path_lengths_before = []
-    df_Total_collisions_before = []
-    df_All_path_lengths_after = []
-    df_Total_collisions_after = []
-   
+    before_collisions = 0
+    after_collisions = 0
+
+
     
     state_dim = max_length * num_robots * k_paths  # Adjusted as per your environment setup
 
@@ -274,37 +270,23 @@ def test_model():
         collisions = env.detect_collisions()
         All_path_lengths_after, Total_collisions_after = env.show_results(collisions)
 
-        if All_path_lengths_after-All_path_lengths_before<0:
-            before2after_path_lengths += All_path_lengths_after-All_path_lengths_before
+        
+        # 如果效果有比原本的更好
         if Total_collisions_after-Total_collisions_before<0:
-            before2after_collisions += Total_collisions_after-Total_collisions_before
-
-        original_collisions += All_path_lengths_before
-        # before2after_path_lengths += All_path_lengths_after-All_path_lengths_before
-        # before2after_collisions += Total_collisions_after-Total_collisions_before
+            before_collisions += Total_collisions_before
+            after_collisions += Total_collisions_after
+        else:
+            before_collisions += Total_collisions_before
+            after_collisions += Total_collisions_before
+        
 
         print(f"Episode {episode+1}, Reward_before: {reward_before:3.3f}, Reward_after: {reward_after:3.3f}")
 
-        df_All_path_lengths_before.append(All_path_lengths_before)
-        df_Total_collisions_before.append(Total_collisions_before)
-        df_All_path_lengths_after.append(All_path_lengths_after)
-        df_Total_collisions_after.append(Total_collisions_after)
+    print('original_collisions = ', before_collisions)
+    print('after_collisions = ', after_collisions)
+    print('before2after_collisions', after_collisions-before_collisions)
+    print('Collision Reduction Rate = ', ( (after_collisions-before_collisions) / before_collisions)*100, '%')
 
-    print('before2after_path_lengths', before2after_path_lengths)
-    print('before2after_collisions', before2after_collisions)
-    print('Collision Reduction Rate = ', (before2after_collisions/original_collisions)*100, '%')
-
-    df = pd.DataFrame({
-        'Episode': range(1, 11),
-        'All Path Lengths Before': df_All_path_lengths_before,
-        'Total Collisions Before': df_Total_collisions_before,
-        'All Path Lengths After': df_All_path_lengths_after,
-        'Total Collisions After': df_Total_collisions_after
-    })
-
-    # Save DataFrame to CSV
-    df.to_csv('./simulation_metrics.csv', index=False)
-    print("Data has been saved to 'simulation_metrics.csv'")
 
 
 
